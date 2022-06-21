@@ -10,8 +10,8 @@ As a business owner, I wanted to keep track of my company's departments, roles, 
 
 ## Information
 
-GitHub repository:
-Image:
+GitHub repository: https://github.com/tdickson96/Employee-Tracker 
+Image: 
 Tutorial (video):
 
 ## Author
