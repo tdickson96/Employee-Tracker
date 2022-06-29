@@ -2,8 +2,6 @@ DROP DATABASE IF EXISTS company_db;
 CREATE DATABASE IF NOT EXISTS company_db;
 USE company_db;
 
-DROP TABLE IF EXISTS department, role, employee;
-
 CREATE TABLE department (
     id      INT         NOT NULL    AUTO_INCREMENT,
     name    VARCHAR(30) NOT NULL,
