@@ -4,14 +4,17 @@
   "description": "A Node Inquirer command line prompter to keep track of employees, departments, and company roles.",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdickson96/Employee-Tracker"
   },
   "author": "Trent Dickson",
   "license": "ISC",
   "dependencies": {
     "console.table": "^0.10.0",
-    "express": "^4.18.1",
     "inquirer": "^8.2.4",
     "mysql2": "^2.3.3"
   }
