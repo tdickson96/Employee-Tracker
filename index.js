@@ -6,7 +6,7 @@ const cTable = require('console.table');
 const departments = [];
 const roles = [];
 const managers = [{name: "Atlas Bunson", value: 1}, {name: "Idris Jackson", value: 5}];
-const employees = [];
+const employees = ["employee id",'a',"new role id",'b',"employee"]
 
 const ALL_DEPARTMENTS = 'View all Departments';
 const ALL_ROLES = 'View all Roles';
@@ -237,7 +237,6 @@ function newEmployee() {
 
 // function is called when UPDATE EMPLOYEE is chosen
 function updateEmployee() {
-  let employees = [];
 
   db.query(`SELECT first_name, last_name FROM employee`, function (err, res) {
       if (err) throw err;
@@ -261,9 +260,21 @@ function updateEmployee() {
           choices: roles,
           name: "role"
       }])
-      .then(response => {});
+      .then((res) => {
+        db.query(`UPDATE employee SET role_id = ${res.b} WHERE id = ${res.a}`, (err, results) => {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("\nemployee role update\n press Enter to return");
+          }
+        });
+        reset();
+      })
+      
 
       console.log("------3-------");
+
+      employeeTracker();
   });
 };
 
