@@ -10,7 +10,7 @@ As a business owner, I wanted to keep track of my company's departments, roles, 
 
 ## Information
 
-GitHub repository: https://github.com/tdickson96/Employee-Tracker 
+[GitHub repository](https://github.com/tdickson96/Employee-Tracker)
 
 [Tutorial Video](./images/MySQL_Employee_Tracker.gif)
 
